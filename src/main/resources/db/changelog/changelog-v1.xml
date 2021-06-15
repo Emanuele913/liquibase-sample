@@ -9,15 +9,13 @@
 
         <createProcedure catalogName="cat"
                          comments="A String"
-                         dbms="h2, !oracle, mysql"
+                         dbms="h2"
                          encoding="UTF-8"
                          path="testprocedure.sql"
                          procedureName="new_customer"
                          relativeToChangelogFile="true"
                          schemaName="liquibase">
         </createProcedure>
-
-        <sql> call testHello()</sql>
     </changeSet>
 
 <!--    <changeSet id="2" author="Ciccio">
