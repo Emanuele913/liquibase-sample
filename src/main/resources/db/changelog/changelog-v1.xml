@@ -17,66 +17,68 @@
                          schemaName="liquibase">
         </createProcedure>
 
-        <sql> call testHello()</sql>
     </changeSet>
 
-<!--    <changeSet id="2" author="Ciccio">
-        <
-    </changeSet>-->
-
-
-
-
-  <!--  <changeSet id="2" author="ciccio">
-        <createProcedure catalogName="cat"
-                         comments="A String"
-                         dbms="h2, !oracle, mysql"
-                         encoding="UTF-8"
-                         path="testprocedure.sql"
-                         procedureName="new_customer"
-                         relativeToChangelogFile="true"
-                         schemaName="liquibase">
-        </createProcedure>
-
-    </changeSet>
-
-    <changeSet id="3" author="abc">
-        <sql dbms="!h2, oracle, mysql"
-             endDelimiter="\nGO"
-             splitStatements="true"
-             stripComments="true">
-            insert into students (name) values ('ciccio')
-        </sql>
-    </changeSet>
-
-    <changeSet id="5" author="abc5">
+    <changeSet id="2" author="Ciccio">
         <sql dbms="!h2, oracle, mysql"
              endDelimiter="\nGO"
              splitStatements="true"
              stripComments="true">
             call testHello()
-            </sql>
-    </changeSet>-->
-<!--    <changeSet id="2" author="Dickson the developer">
-        <addColumn schemaName="liquibase"
-                   tableName="students">
-            <column name="level" type="varchar(255)" />
-        </addColumn>
+        </sql>
     </changeSet>
-    <changeSet author="dickson-the-developer" id="6">
-        <delete schemaName="liquibase"
-                tableName="students">
-            <where>name='Matthew'</where>
-        </delete>
-    </changeSet>
-    <changeSet author="dickson-the-developer" id="8">
-        <createTable
-                schemaName="liquibase"
-                tableName="car"
-                tablespace="A String">
-            <column name="number-plate" type="varchar(255)"/>
-        </createTable>
-    </changeSet>-->
+
+
+    <!--  <changeSet id="2" author="ciccio">
+          <createProcedure catalogName="cat"
+                           comments="A String"
+                           dbms="h2, !oracle, mysql"
+                           encoding="UTF-8"
+                           path="testprocedure.sql"
+                           procedureName="new_customer"
+                           relativeToChangelogFile="true"
+                           schemaName="liquibase">
+          </createProcedure>
+
+      </changeSet>
+
+      <changeSet id="3" author="abc">
+          <sql dbms="!h2, oracle, mysql"
+               endDelimiter="\nGO"
+               splitStatements="true"
+               stripComments="true">
+              insert into students (name) values ('ciccio')
+          </sql>
+      </changeSet>
+
+      <changeSet id="5" author="abc5">
+          <sql dbms="!h2, oracle, mysql"
+               endDelimiter="\nGO"
+               splitStatements="true"
+               stripComments="true">
+              call testHello()
+              </sql>
+      </changeSet>-->
+    <!--    <changeSet id="2" author="Dickson the developer">
+            <addColumn schemaName="liquibase"
+                       tableName="students">
+                <column name="level" type="varchar(255)" />
+            </addColumn>
+        </changeSet>
+        <changeSet author="dickson-the-developer" id="6">
+            <delete schemaName="liquibase"
+                    tableName="students">
+                <where>name='Matthew'</where>
+            </delete>
+        </changeSet>
+        <changeSet author="dickson-the-developer" id="8">
+            <createTable
+                    schemaName="liquibase"
+                    tableName="car"
+                    tablespace="A String">
+                <column name="number-plate" type="varchar(255)"/>
+            </createTable>
+        </changeSet>-->
 
 
 </databaseChangeLog>
